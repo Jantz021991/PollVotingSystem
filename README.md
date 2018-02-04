@@ -7,4 +7,4 @@ This application is being built as part of Enterprise Application and Systems In
 
 The deployed application is available on Heroku: 
 
-[My Voting Blog](https://djantz-voting-system.herokuapp.com/)
+[My Voting Blog](https://djantz-voting-system.herokuapp.com/djpolls/)
