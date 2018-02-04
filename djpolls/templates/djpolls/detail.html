@@ -1,4 +1,11 @@
+{% load static %}
+
+
+<link rel="stylesheet" type="text/css" href="{% static 'djpolls/style.css' %}" />
+
+
 <h1>{{ question.question_text }}</h1>
+
 
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
 
@@ -6,9 +13,11 @@
 {% csrf_token %}
 {% for choice in question.choice_set.all %}
     <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
+
     <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br />
+    <br>
 {% endfor %}
-<div="col">
-<input type="submit" value="Vote" />
-</div>
+
+<input style="background-color: dodgerblue" type="submit" value="Vote" />
+
 </form>
