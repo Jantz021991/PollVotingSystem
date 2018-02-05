@@ -1,9 +1,7 @@
 {% extends "admin/base.html" %}
 
-{% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
-
-{% block branding %}
-<h1 id="DJ-Polls"><a href="{% url 'admin:index' %}">Polls Administration</a></h1>
-{% endblock %}
+{% block title %}{{ title }} | {% block branding %}
+<h1 id="djpolls"><a href="{% url 'admin:index' %}">Polls Administration</a></h1>
+{% endblock %}{% endblock %}
 
 {% block nav-global %}{% endblock %}
