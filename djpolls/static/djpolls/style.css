@@ -3,6 +3,6 @@ li a {
 }
 
 body {
-    background: white url("images/background.gif") no-repeat right bottom;
-    background-color: lightcyan;
-}
+
+    background: white url("images/background.jpg") no-repeat center ;
+  }
